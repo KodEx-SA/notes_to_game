@@ -1,4 +1,3 @@
-// src/components/Game.jsx
 import React, { useEffect } from 'react';
 import Phaser from 'phaser';
 import axios from 'axios';
