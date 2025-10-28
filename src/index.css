@@ -1,0 +1,58 @@
+/* src/index.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#root {
+  max-width: 900px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00ff88;
+}
+
+.upload-container {
+  margin-bottom: 20px;
+}
+
+.upload-container input[type="file"] {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #00ff88;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.upload-container button {
+  padding: 10px 20px;
+  background-color: #00ff88;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.upload-container button:hover {
+  background-color: #00cc6b;
+}
+
+#game-container {
+  margin: 0 auto;
+  border: 2px solid #00ff88;
+  border-radius: 10px;
+  overflow: hidden;
+}
