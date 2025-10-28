@@ -59,7 +59,7 @@ const Game = ({ keywords }) => {
       coin.destroy();
       score += 10;
       scoreText.setText(`Score: ${score}`);
-      axios.post(`${process.env.REACT_APP_API_URL}/scores`, {
+      axios.post(`${import.meta.env.VITE_API_URL}/scores`, {
         user_id: 'anonymous',
         score,
       }).catch((error) => console.error('Score save error:', error));

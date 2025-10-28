@@ -16,7 +16,7 @@ const Upload = ({ setKeywords }) => {
     formData.append('user_id', 'anonymous'); // Replace with auth later
 
     try {
-        const response = await axios.post(`${process.env.REACT_APP_API_URL}/upload`, formData, {
+        const response = await axios.post(`${import.meta.env.VITE_API_URL}/upload`, formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       setKeywords(response.data.keywords);
